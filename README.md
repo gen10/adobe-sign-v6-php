@@ -48,28 +48,19 @@ if (!isset($_GET['code'])) {
     $accessToken = $adobeSign->getAccessToken($_GET['code']);
     $adobeSign->setAccessToken($accessToken->getToken());
     $adobeSign->createAgreement([
-        'documentCreationInfo' => [
-            'fileInfos'         => [
-                'libraryDocumentId' => 'your_library_document_id'
-            ],
-            'name'              => 'My Document',
+            "fileInfos" => array([
+                'transientDocumentId' => 'your_transient_document_id',
+                ]),
+            'name'              => 'your_document_name',
+            'participantSetsInfo' => array([
+                'memberInfos' => array([
+                    'email' => 'member_email'
+                ]),
+                'order' => 1,
+                'role'        => 'SIGNER',
+            ]),
             'signatureType'     => 'ESIGN',
-            'recipientSetInfos' => [
-                'recipientSetMemberInfos' => [
-                    'email' => 'test@gmail.com'
-                ],
-                'recipientSetRole'        => [
-                    'SIGNER'
-                ]
-            ],
-            'mergeFieldInfo'    => [
-                [
-                    'fieldName'    => 'Name',
-                    'defaultValue' => 'John Doe'
-                ]
-            ],
-            'signatureFlow'     => 'SENDER_SIGNATURE_NOT_REQUIRED'
-        ]
+            'state'=> 'IN_PROCESS',
     ]);
 }
 ```
