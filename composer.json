@@ -23,12 +23,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "EAZIEER\\AdobeSign\\": "src/"
+      "Eazieer\\AdobeSign\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "EAZIEER\\AdobeSign\\Tests\\": "tests/"
+      "Eazieer\\AdobeSign\\Tests\\": "tests/"
     }
   }
 }
