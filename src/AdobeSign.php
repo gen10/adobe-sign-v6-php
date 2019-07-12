@@ -22,7 +22,7 @@ class AdobeSign
     /**
      * @var string
      */
-    protected $baseUri = 'https://api.na1.echosign.com/api/rest';
+    protected $baseUri = 'https://api.eu1.echosign.com/api/rest';
 
     /**
      * @var string
@@ -107,7 +107,7 @@ class AdobeSign
     {
         $request = $this->provider->getAuthenticatedRequest(
             'GET',
-            "$this->baseUri/$this->version/base_uris",
+            "$this->baseUri/$this->version/baseUris",
             $this->accessToken
         );
 
