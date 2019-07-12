@@ -32,7 +32,7 @@ abstract class BaseTestCase extends TestCase
     protected function setUp()
     {
         $this->request = m::mock('Psr\Http\Message\RequestInterface');
-        $this->provider = m::mock('KevinEm\OAuth2\Client\AdobeSign');
+        $this->provider = m::mock('Eazieer\OAuth2\Client\AdobeSign');
         $this->adobeSign = new AdobeSign($this->provider);
     }
 

@@ -30,7 +30,7 @@ class AdobeSign
     protected $version = 'v6';
 
     /**
-     * @var \KevinEm\OAuth2\Client\AdobeSign
+     * @var \Eazieer\OAuth2\Client\AdobeSign
      */
     protected $provider;
 
