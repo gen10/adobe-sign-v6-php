@@ -1,29 +1,31 @@
-# Adobe Sign PHP
+# Adobe Sign V6 Rest API client for PHP
+
+Project forked from the great work of Kevinem and his Rest API V5 client available at https://github.com/kevinem/adobe-sign-php
 
 https://acrobat.adobe.com/us/en/sign.html
 
-[![Latest Stable Version](https://poser.pugx.org/kevinem/adobe-sign-php/v/stable?format=flat-square)](https://packagist.org/packages/kevinem/adobe-sign-php)
-[![License](https://poser.pugx.org/kevinem/adobe-sign-php/license?format=flat-square)](https://packagist.org/packages/kevinem/adobe-sign-php)
-[![Build Status](https://travis-ci.org/kevinem/adobe-sign-php.svg?branch=master)](https://travis-ci.org/kevinem/adobe-sign-php)
+[![Latest Stable Version](https://poser.pugx.org/eazieer/adobe-sign-php/v/stable?format=flat-square)](https://packagist.org/packages/eazieer/adobe-sign-php)
+[![License](https://poser.pugx.org/eazieer/adobe-sign-php/license?format=flat-square)](https://packagist.org/packages/eazieer/adobe-sign-php)
+[![Build Status](https://travis-ci.org/eazieer/adobe-sign-php.svg?branch=master)](https://travis-ci.org/eazieer/adobe-sign-php)
 
 ## Installation
 
 To install, use composer:
 
 ```
-composer require kevinem/adobe-sign-php
+composer require eazieer/adobe-sign-v6-php (almost done !)
 ```
 
 ## Documentation
 
-https://secure.na1.echosign.com/public/docs/restapi/v5
+https://secure.na1.echosign.com/public/docs/restapi/v6
 
 ### Example Usage
 
 ```php
 session_start();
 
-$provider = new KevinEm\OAuth2\Client\AdobeSign([
+$provider = new Eazieer\OAuth2\Client\AdobeSign([
     'clientId'          => 'your_client_id',
     'clientSecret'      => 'your_client_secret',
     'redirectUri'       => 'your_callback',
@@ -74,8 +76,6 @@ if (!isset($_GET['code'])) {
 
 ### Generate Multipart Stream for transient document upload
 
-Thanks to @trip-somers for the [solution](https://github.com/kevinem/adobe-sign-php/issues/1).
-
 ```php
 $file_path = '/path/to/local/document';
 
@@ -98,6 +98,7 @@ $transient_document = $adobeSign->uploadTransientDocument($multipart_stream);
 
 The MIT License (MIT)
 Copyright (c) 2016 Kevin Em
+Copyright (c) 2019 EAZIEER
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation
