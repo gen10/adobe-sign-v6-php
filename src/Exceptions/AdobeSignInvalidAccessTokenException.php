@@ -1,7 +1,7 @@
 <?php
 
 
-namespace KevinEm\AdobeSign\Exceptions;
+namespace Eazieer\AdobeSign\Exceptions;
 
 
 class AdobeSignInvalidAccessTokenException extends AdobeSignException

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace KevinEm\AdobeSign\Tests;
+namespace Eazieer\AdobeSign\Tests;
 
 
 class AdobeSignViewsTest extends BaseTestCase

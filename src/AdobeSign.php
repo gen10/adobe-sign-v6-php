@@ -1,19 +1,19 @@
 <?php
 
 
-namespace KevinEm\AdobeSign;
+namespace Eazieer\AdobeSign;
 
 use GuzzleHttp\Psr7\MultipartStream;
-use KevinEm\AdobeSign\Exceptions\AdobeSignException;
-use KevinEm\AdobeSign\Exceptions\AdobeSignInvalidAccessTokenException;
-use KevinEm\AdobeSign\Exceptions\AdobeSignMissingRequiredParamException;
-use KevinEm\AdobeSign\Exceptions\AdobeSignUnsupportedMediaTypeException;
+use Eazieer\AdobeSign\Exceptions\AdobeSignException;
+use Eazieer\AdobeSign\Exceptions\AdobeSignInvalidAccessTokenException;
+use Eazieer\AdobeSign\Exceptions\AdobeSignMissingRequiredParamException;
+use Eazieer\AdobeSign\Exceptions\AdobeSignUnsupportedMediaTypeException;
 use League\OAuth2\Client\Provider\AbstractProvider;
 use League\OAuth2\Client\Tool\QueryBuilderTrait;
 
 /**
  * Class AdobeSign
- * @package KevinEm\AdobeSign
+ * @package Eazieer\AdobeSign
  */
 class AdobeSign
 {
@@ -27,7 +27,7 @@ class AdobeSign
     /**
      * @var string
      */
-    protected $version = 'v5';
+    protected $version = 'v6';
 
     /**
      * @var \KevinEm\OAuth2\Client\AdobeSign

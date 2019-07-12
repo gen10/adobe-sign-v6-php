@@ -1,10 +1,10 @@
 <?php
 
 
-namespace KevinEm\AdobeSign\Tests;
+namespace Eazieer\AdobeSign\Tests;
 
 
-use KevinEm\AdobeSign\AdobeSign;
+use Eazieer\AdobeSign\AdobeSign;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 

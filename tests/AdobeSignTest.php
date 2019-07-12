@@ -1,7 +1,7 @@
 <?php
 
 
-namespace KevinEm\AdobeSign\Tests;
+namespace Eazieer\AdobeSign\Tests;
 
 
 use Mockery as m;
@@ -38,7 +38,7 @@ class AdobeSignTest extends BaseTestCase
 
     public function testAdobeSignInvalidAccessTokenException()
     {
-        $this->expectException('KevinEm\AdobeSign\Exceptions\AdobeSignInvalidAccessTokenException');
+        $this->expectException('Eazieer\AdobeSign\Exceptions\AdobeSignInvalidAccessTokenException');
 
         $this->provider->shouldReceive('getAuthenticatedRequest')->andReturn($this->request);
         $this->provider->shouldReceive('getResponse')->andReturn([
@@ -50,7 +50,7 @@ class AdobeSignTest extends BaseTestCase
 
     public function testAdobeSignUnsupportedMediaTypeException()
     {
-        $this->expectException('KevinEm\AdobeSign\Exceptions\AdobeSignUnsupportedMediaTypeException');
+        $this->expectException('Eazieer\AdobeSign\Exceptions\AdobeSignUnsupportedMediaTypeException');
 
         $this->provider->shouldReceive('getAuthenticatedRequest')->andReturn($this->request);
         $this->provider->shouldReceive('getResponse')->andReturn([
@@ -62,7 +62,7 @@ class AdobeSignTest extends BaseTestCase
 
     public function testAdobeSignMissingRequiredParamException()
     {
-        $this->expectException('KevinEm\AdobeSign\Exceptions\AdobeSignMissingRequiredParamException');
+        $this->expectException('Eazieer\AdobeSign\Exceptions\AdobeSignMissingRequiredParamException');
 
         $this->provider->shouldReceive('getAuthenticatedRequest')->andReturn($this->request);
         $this->provider->shouldReceive('getResponse')->andReturn([
@@ -74,7 +74,7 @@ class AdobeSignTest extends BaseTestCase
 
     public function testAdobeSignException()
     {
-        $this->expectException('KevinEm\AdobeSign\Exceptions\AdobeSignException');
+        $this->expectException('Eazieer\AdobeSign\Exceptions\AdobeSignException');
 
         $this->provider->shouldReceive('getAuthenticatedRequest')->andReturn($this->request);
         $this->provider->shouldReceive('getResponse')->andReturn([
