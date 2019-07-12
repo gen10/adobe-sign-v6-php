@@ -4,9 +4,9 @@ Project forked from the great work of Kevinem and his Rest API V5 client availab
 
 https://acrobat.adobe.com/us/en/sign.html
 
-[![Latest Stable Version](https://poser.pugx.org/eazieer/adobe-sign-php/v/stable?format=flat-square)](https://packagist.org/packages/eazieer/adobe-sign-php)
-[![License](https://poser.pugx.org/eazieer/adobe-sign-php/license?format=flat-square)](https://packagist.org/packages/eazieer/adobe-sign-php)
-[![Build Status](https://travis-ci.org/eazieer/adobe-sign-php.svg?branch=master)](https://travis-ci.org/eazieer/adobe-sign-php)
+[![Latest Stable Version](https://poser.pugx.org/eazieer/adobe-sign-v6-php/v/stable?format=flat-square)](https://packagist.org/packages/eazieer/adobe-sign-v6-php)
+[![License](https://poser.pugx.org/eazieer/adobe-sign-v6-php/license?format=flat-square)](https://packagist.org/packages/eazieer/adobe-sign-v6-php)
+[![Build Status](https://travis-ci.org/eazieer/adobe-sign-v6-php.svg?branch=master)](https://travis-ci.org/eazieer/adobe-sign-v6-php)
 
 ## Installation
 
