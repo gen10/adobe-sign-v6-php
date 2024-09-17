@@ -1,5 +1,5 @@
 {
-  "name": "eazieer/adobe-sign-v6-php",
+  "name": "gen10/adobe-sign-v6-php",
   "description": "Adobe Sign V6 Rest API PHP Client",
   "require": {
     "php": ">=5.6.0",
